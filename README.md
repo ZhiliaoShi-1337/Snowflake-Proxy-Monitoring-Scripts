@@ -13,4 +13,5 @@ If you, the user, want to create any kind of Issue, please keep in mind, that I 
 2. Change the mentioned strings for folders, where logs will be created.
 3. Create those log directories
 4. enter crontab -e to set the entries for the scripts - don't worry, it's just the path to the scripts
-5. restart you're server and hope, that everything is running
+5. install sysstat - it's needed to monitor the RAM usage via mpstat
+6. restart you're server and hope, that everything is running
