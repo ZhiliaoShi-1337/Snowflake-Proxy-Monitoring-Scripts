@@ -36,6 +36,3 @@ rm /<CHANGE THIS>/memory.log
         sleep 1
 
         done
-else
-        exit
-fi
