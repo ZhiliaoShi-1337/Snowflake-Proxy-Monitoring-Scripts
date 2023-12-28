@@ -70,8 +70,6 @@ check_memory.sh
 
 this script will get values provided by sysstat
 
-I did only implement the options MiB and KiB - I don't know, if this could also be GiB - one thing, which will be tested in the future
-
 
 check_snowflake.sh
 
