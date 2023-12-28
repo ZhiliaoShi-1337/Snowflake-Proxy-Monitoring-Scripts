@@ -1,20 +1,17 @@
-# Snowflake-Proxy-Monitoring-Scripts
+# WARNING
 
---- WARNING ---
+ ! ! ! THE PROVIDED SCRIPTS ARE STILL AN ALPHA BUILD ! ! !
 
 The provided scripts to monitor and restart the snowflake-proxy are NOT from torproject!
 
 These scripts are created by an single person, trying to manage high CPU and RAM errors, which can result in an crash of the system.
 
-
---- DISCLAIMER ---
-
 I do NOT take any responsibility for any errors, resulted by the provided scripts.
 
-If you, the user, want to create any kind of Issue, please keep in mind, that I CAN'T work on this project full time.
+If you want to create any kind of Issue, please keep in mind, that I CAN'T work on this project full time.
 
 
---- How to use the provided scripts ---
+# How to use the provided scripts
 
 1. Download the Repo to you're machine, where snowflake-proxy is installed.
 
@@ -31,17 +28,18 @@ If you, the user, want to create any kind of Issue, please keep in mind, that I 
 7. restart you're server and hope, that everything is running
 
 
---- Ideas for improvements ---
+
+# Ideas for improvements
 
 1. provide an setup script to install needed packages, setup ufw, create directories
 2. create some sort of notification script in case of errors - provide options like slack, sendmail or else
 3. automated csv file creation from the logs
 
 
---- How the scripts work ---
+# How the scripts work
 
 Crontab: 
-
+--------
 first off, the initial_snowflake.sh will be run at reboot
 
 by doing so, the last snowflake.log will be saved into the snowflake-logs folder
@@ -58,7 +56,7 @@ at last, at every reboot the cpu.log and memory.log will be saved into the log d
 
 
 check_cpu.sh
-
+------------
 this script will check the CPU usage of the entire server
 
 if the value get's over 90%, snowflake-proxy will be restarted and logs will be saved
@@ -67,12 +65,12 @@ if you want to increase or decrease this value, feel free to try it out
 
 
 check_memory.sh
-
+---------------
 this script will get values provided by sysstat
 
 
 check_snowflake.sh
-
+------------------
 this script will only see, if snowflake-proxy is still running
 
 in case, that the snowflake-proxy would be terminated through an error or anything else, this script would restart snowflake-proxy and save the snowflake.log into snowflake-logs
