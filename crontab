@@ -18,3 +18,15 @@
 
 # move memory log
 @reboot         /usr/bin/mv /<CHANGE THIS>/memory.log /<CHANGE THIS>/memory-logs/$(date -u +%Y-%m-%d)-memory.log
+
+# delete old cpu logs at first day of the month - default is set to 30 days
+0 0 1 * *       find /<CHANGE THIS>/cpu-logs/ -type f -mtime +30 -exec rm -f {} \;
+
+# delete old memory logs at first day of the month - default is set to 30 days
+0 0 1 * *       find /<CHANGE THIS>/ram-logs/ -type f -mtime +30 -exec rm -f {} \;
+
+# delete old snowflake error logs at first day of the month - default is set to 30 days
+0 0 1 * *       find /<CHANGE THIS>/snowflake-error-logs/ -type f -mtime +30 -exec rm -f {} \;
+
+# delete old snowflake logs at first day of the month - default is set to 30 days
+0 0 1 * *       find /<CHANGE THIS>/snowflake-logs/ -type f -mtime +30 -exec rm -f {} \;
