@@ -36,7 +36,6 @@ If you, the user, want to create any kind of Issue, please keep in mind, that I 
 1. provide an setup script to install needed packages, setup ufw, create directories
 2. create some sort of notification script in case of errors - provide options like slack, sendmail or else
 3. automated csv file creation from the logs
-4. log file rotation - NEEDED
 
 
 --- How the scripts work ---
