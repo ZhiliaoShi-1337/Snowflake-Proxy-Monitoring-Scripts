@@ -17,4 +17,4 @@
 @reboot         /usr/bin/mv /<CHANGE THIS>/cpu.log /<CHANGE THIS>/cpu-logs/$(date -u +%Y-%m-%d)-cpu.log
 
 # move memory log
-@reboot         /usr/bin/mv /<CHANGE THIS>/memory.log /<CHANGE THIS>/ram-logs/$(date -u +%Y-%m-%d)-memory.log
+@reboot         /usr/bin/mv /<CHANGE THIS>/memory.log /<CHANGE THIS>/memory-logs/$(date -u +%Y-%m-%d)-memory.log
