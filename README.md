@@ -29,13 +29,6 @@ If you want to create any kind of Issue, please keep in mind, that I CAN'T work 
 
 
 
-# Ideas for improvements
-
-1. provide an setup script to install needed packages, setup ufw, create directories
-2. create some sort of notification script in case of errors - provide options like slack, sendmail or else
-3. automated csv file creation from the logs
-
-
 # How the scripts work
 
 Crontab: 
