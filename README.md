@@ -1,6 +1,7 @@
 # WARNING
 
  ! ! ! THE PROVIDED SCRIPTS ARE STILL AN ALPHA BUILD ! ! !
+ ! ! ! Please use Debian 12, installed with english language ! ! !
 
 The provided scripts to monitor and restart the snowflake-proxy are NOT from torproject!
 
