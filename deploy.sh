@@ -77,6 +77,8 @@ else
         sed -i "s@user_input_logdir@$user_input_logdir@g" ./check_memory.sh
         sed -i "s@user_input_logdir@$user_input_logdir@g" ./check_snowflake.sh
         sed -i "s@user_input_logdir@$user_input_logdir@g" ./initial_snowflake.sh
+        sed -i "s@current_dir@$current_dir@g" ./check_script_cpu_script.sh
+        sed -i "s@current_dir@$current_dir@g" ./check_script_memory_script.sh
 
         echo "### ask for automated updates via crontab ###" # automated restart any day at 3am
         read -p "Do you want to have automated updates and an restart at 3pm every day? (Y|N): " user_input_choice_update
