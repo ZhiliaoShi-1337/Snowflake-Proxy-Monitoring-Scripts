@@ -15,11 +15,13 @@ If you want to create any kind of Issue, please keep in mind, that I CAN'T work 
 
 1. Download the Repo to you're machine, where snowflake-proxy is or will be installed.
 
-2. run bash deploy.sh
+2. if needed, create an user and group for snowflake-proxy
 
-3. if you don't already have opened the UDP-Portrange from 32768 to 60999, do this via ufw allow 32768:60999/udp - the snowflake log will then show "NAT type: unrestricted" in the snowflake.log
+3. run bash deploy.sh
 
-4. restart you're server
+4. if you don't already have opened the UDP-Portrange from 32768 to 60999, do this via ufw allow 32768:60999/udp - the snowflake log will then show "NAT type: unrestricted" in the snowflake.log
+
+5. restart you're server
 
 
 
